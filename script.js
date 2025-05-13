@@ -21,3 +21,14 @@ gsap.from("#main h1 ", {
   duration: 1,
   delay: 0.4,
 });
+
+
+gsap.from("#page_2 h5, #page_2 h1, #page_2 aboutUs", {
+  opacity: 0,
+  stagger: 0.4,
+  scrollTrigger: {
+    trigger: "#page_2 h5",
+    scroller: "body",
+    start: "top 60%",
+  },
+});
